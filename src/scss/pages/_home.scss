@@ -1,0 +1,10 @@
+source {
+  display: none;
+}
+
+h1 {
+  font-size: 1rem;
+  @include breakpoint(desktop) {
+    font-size: rem(56);
+  }
+}

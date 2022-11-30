@@ -1,0 +1,27 @@
+{
+  "name": "skilled-landing-page-redo",
+  "version": "1.0.0",
+  "description": "![Design preview for the Skilled e-learning landing page coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/scss/main.scss:public/css",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejackshelton/skilled-landing-page-redo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejackshelton/skilled-landing-page-redo/issues"
+  },
+  "homepage": "https://github.com/thejackshelton/skilled-landing-page-redo#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0",
+    "sass": "^1.56.1"
+  }
+}
