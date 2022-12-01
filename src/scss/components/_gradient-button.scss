@@ -1,4 +1,4 @@
-.footercontainer__button {
+.footer-button {
   position: relative;
   background-image: var(--bluePinkGradient);
   color: var(--white);
@@ -7,7 +7,7 @@
 
 /* adding a transition to a gradient */
 
-.footercontainer__button::before {
+.footer-button::before {
   position: absolute;
   content: "";
   top: 0;
@@ -27,6 +27,6 @@
   border-radius: 1.75rem;
 }
 
-.footercontainer__button:hover::before {
+.footer-button:hover::before {
   opacity: 1;
 }

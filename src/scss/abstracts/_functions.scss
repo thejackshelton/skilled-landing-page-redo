@@ -2,7 +2,7 @@
 
 @function rem($pixels) {
   @if math.is-unitless($pixels) {
-    @return math.div($pixels, 16px) + rem;
+    @return math.div($pixels, 16) + rem;
   } @else {
     @error "Don't use units when using the rem() function; only numbers.";
   }
