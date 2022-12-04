@@ -1,5 +1,43 @@
+@use "../abstracts/" as *;
+
 header {
   display: flex;
   justify-content: space-between;
-  margin: 16px 16px 0px;
+  margin: 0 auto;
+  padding: 16px 16px 0px;
+
+  @include breakpoint(tablet) {
+    max-width: rem(716);
+    padding-top: 24px;
+  }
+
+  @include breakpoint(desktop) {
+    max-width: rem(1126);
+  }
+
+  button {
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(tablet) {
+      position: absolute;
+      right: 20px;
+    }
+
+    @include breakpoint(desktop) {
+      right: 200px;
+    }
+  }
 }
+
+// @include breakpoint(tablet) {
+//   header {
+//     padding: 24px 40px 0px;
+//   }
+// }
+
+// @include breakpoint(desktop) {
+//   header {
+//     padding: 24px 120px 0px;
+//   }
+// }

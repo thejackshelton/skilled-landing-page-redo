@@ -75,6 +75,7 @@ img {
 }
 
 h1 {
+  max-width: 21.4375rem;
   margin-top: 38px;
   margin-bottom: 26px;
   font-size: 2.5rem;
@@ -82,8 +83,15 @@ h1 {
   line-height: 1.2;
 }
 
-@media (min-width: 58rem) {
+@media (min-width: 42.1875rem) {
   h1 {
+    max-width: 20.375rem;
+  }
+}
+
+@media (min-width: 73rem) {
+  h1 {
+    max-width: 28.5625rem;
     font-size: 3.5rem;
   }
 }
@@ -94,6 +102,12 @@ h2 {
   font-weight: 800;
 }
 
+@media (min-width: 73rem) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
 h3 {
   font-size: 1.25rem;
   font-weight: 800;
@@ -101,13 +115,80 @@ h3 {
 
 p {
   color: var(--gray);
+  max-width: 21.4375rem;
   font-size: 1rem;
+}
+
+@media (min-width: 42.1875rem) {
+  p {
+    max-width: 24.875rem;
+    max-width: 27.8125rem;
+  }
+}
+
+@media (min-width: 73rem) {
+  p {
+    font-size: 1.125rem;
+  }
 }
 
 .intro {
   flex-direction: column;
+  justify-content: center;
+  margin: auto;
   padding: 0 16px;
   display: flex;
+}
+
+@media (min-width: 42.1875rem) {
+  .intro {
+    max-width: 44.875rem;
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+    margin: 0;
+    display: grid;
+  }
+}
+
+@media (min-width: 73rem) {
+  .intro {
+    max-width: 70.375rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 168px;
+  }
+}
+
+@media (min-width: 42.1875rem) {
+  .intro-wrapper {
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+  }
+}
+
+@media (min-width: 73rem) {
+  .intro-wrapper {
+    margin-top: 0;
+    margin-bottom: 250px;
+  }
+}
+
+.intro-content {
+  margin: 0 auto;
+}
+
+@media (min-width: 42.1875rem) {
+  .intro-content {
+    width: 24.875rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 73rem) {
+  .intro-content {
+    width: 28.5625rem;
+  }
 }
 
 button {
@@ -120,6 +201,12 @@ button {
   font-size: 1rem;
   font-weight: 700;
   transition: background .2s ease-in;
+}
+
+@media (min-width: 73rem) {
+  button {
+    font-size: 1.125rem;
+  }
 }
 
 button:hover {
@@ -142,13 +229,26 @@ button:hover {
 }
 
 .picture-wrapper {
-  object-fit: contain;
   justify-content: center;
   display: flex;
+  overflow: hidden;
 }
 
-.graphic {
-  object-fit: none;
+@media (min-width: 42.1875rem) {
+  picture {
+    width: 37.5rem;
+    height: 37.5rem;
+    position: absolute;
+    top: 0;
+    right: -275px;
+  }
+}
+
+@media (min-width: 73rem) {
+  picture {
+    width: 62.5rem;
+    top: -175px;
+  }
 }
 
 .cta-wrapper {
@@ -159,7 +259,7 @@ button:hover {
   padding: 24px 29px 32px 28px;
 }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 42.1875rem) {
   .cta-wrapper {
     height: 16.1875rem;
   }
@@ -169,21 +269,49 @@ button:hover {
   }
 }
 
+@media (min-width: 73rem) {
+  .cta-wrapper {
+    height: 20.125rem;
+  }
+}
+
 .grid-wrapper {
   background: linear-gradient(#fff 0%, #f0f1ff 100%);
 }
 
+@media (min-width: 42.1875rem) {
+  .grid-wrapper {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media (min-width: 73rem) {
+  .grid-wrapper {
+    padding-bottom: 16px;
+  }
+}
+
 .grid {
   grid-template-columns: 1fr;
+  place-items: center;
   gap: 16px;
   margin: 0 16px;
   display: grid;
 }
 
-@media (min-width: 37.5rem) {
+@media (min-width: 42.1875rem) {
   .grid {
     grid-template-columns: 1fr 1fr;
-    place-items: center;
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: 73rem) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    display: grid;
   }
 }
 
@@ -192,9 +320,12 @@ button:hover {
   max-width: 21.4375rem;
   height: 16.1875rem;
   border-radius: .625rem;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin: 0 0 40px;
   padding: 28px;
   transition: scale .3s ease-in;
+  display: flex;
 }
 
 .card a {
@@ -202,9 +333,15 @@ button:hover {
   font-size: 1.125rem;
   font-weight: 700;
   text-decoration: none;
+  transition: color .2s ease-in;
+}
+
+.card a:hover {
+  color: pink;
 }
 
 .card .icon {
+  max-width: 59px;
   margin-top: -50px;
 }
 
@@ -217,32 +354,68 @@ button:hover {
   padding-bottom: 16px;
 }
 
+@media (min-width: 73rem) {
+  .card {
+    max-width: 21.875rem;
+    height: 20.125rem;
+    padding: 32px;
+  }
+
+  .card .icon {
+    margin-top: -54px;
+  }
+}
+
 .card:hover {
   scale: 1.05;
 }
 
-@media (min-width: 37.5rem) {
-  .intro {
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 0;
-    display: grid;
-  }
+.card:last-child {
+  margin-bottom: 80px;
+}
 
-  .intro-content {
-    max-width: 28.5625rem;
-  }
-
-  .picture-wrapper {
-    object-fit: none;
-    position: relative;
+@media (min-width: 42.1875rem) {
+  .card:last-child {
+    margin-bottom: 40px;
   }
 }
 
 header {
   justify-content: space-between;
-  margin: 16px 16px 0;
+  margin: 0 auto;
+  padding: 16px 16px 0;
   display: flex;
+}
+
+@media (min-width: 42.1875rem) {
+  header {
+    max-width: 44.75rem;
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: 73rem) {
+  header {
+    max-width: 70.375rem;
+  }
+}
+
+header button {
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 42.1875rem) {
+  header button {
+    position: absolute;
+    right: 20px;
+  }
+}
+
+@media (min-width: 73rem) {
+  header button {
+    right: 200px;
+  }
 }
 
 footer {

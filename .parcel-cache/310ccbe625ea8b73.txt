@@ -1,4 +1,4 @@
-4414
+4420
 82C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\htmlparser2\LICENSE133141533511992630 0
 80C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\term-size\license133141533513158869 0
 94C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\reporter-dev-server\lib133141533527756494 1
@@ -40,14 +40,14 @@
 94C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\caniuse-lite\data\regions\RU.js133141533524758215 0
 86C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\csso\lib\replace\atrule133141533515629270 1
 85C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\mdn-data\l10n\index.js133141533512833280 0
-54C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist133143986616165913 1
+54C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist133144067686654934 1
 110C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\optimizer-terser\lib\TerserOptimizer.js133141533524230199 0
 123C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\htmlnano\docs\versioned_docs\version-1.1.1\060-contribute.md133141533517518322 0
 82C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\yaml\parse-cst.d.ts133141533516660729 0
 75C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\import-fresh133141533512569610 1
 76C:\Users\jacks\Code\FEM\skilled-landing-page-redo\src\assets\icon-crypto.svg133137321341864425 0
 73C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\terser\lib133141533516628412 1
-75C:\Users\jacks\Code\FEM\skilled-landing-page-redo\src\scss\pages\_home.scss133143982694632681 0
+75C:\Users\jacks\Code\FEM\skilled-landing-page-redo\src\scss\pages\_home.scss133144067595837416 0
 91C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\optimizer-terser\src133141533524230199 1
 68C:\Users\jacks\Code\FEM\skilled-landing-page-redo\README-template.md133137321340385386 0
 71C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\escalade133141533513302168 1
@@ -839,7 +839,7 @@
 75C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\lmdb\read.js133141533518426824 0
 113C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\runtime-js\src\helpers\worker\js-loader.js133141533519600854 0
 87C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\htmlnano\lib\htmlnano.js133141533514330315 0
-73C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.b10d73a7.css133143986520539542 0
+73C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.b10d73a7.css133144066588150586 0
 93C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\yaml\dist\warnings-1000a372.js133141533516259910 0
 106C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\type-fest\source\union-to-intersection.d.ts133141533515661449 0
 89C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\nullthrows\nullthrows.d.ts133141533515138299 0
@@ -2479,7 +2479,7 @@
 75C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\csso\LICENSE133141533511937644 0
 104C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\css-tree\lib\syntax\node\AtrulePrelude.js133141533512931136 0
 97C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\graph\lib\AdjacencyList.js133141533518818703 0
-65C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.html133143986616145903 0
+65C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.html133144067686624985 0
 111C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\caniuse-lite\data\features\css-color-function.js133141533518426824 0
 113C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@swc\helpers\src\_define_enumerable_properties.mjs133141533518426824 0
 148C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\side-effects-package-redirect-up133141533518828673 1
@@ -3130,6 +3130,7 @@
 96C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\graph\lib\ContentGraph.js133141533518828673 0
 100C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\caniuse-lite\data\features\pointer.js133141533524526874 0
 108C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\caniuse-lite\data\features\element-closest.js133141533519828445 0
+73C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.419f3d1c.css133143994015675119 0
 115C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\caniuse-lite\data\features\element-scroll-methods.js133141533519883392 0
 96C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\caniuse-lite\data\features\eme.js133141533519883392 0
 90C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\events\lib\index.js133141533525554170 0
@@ -3891,6 +3892,7 @@
 115C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\runtime-js\src\helpers\browser\css-loader.js133141533519452357 0
 116C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\runtime-js\src\helpers\browser\html-loader.js133141533519527404 0
 114C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\runtime-js\src\helpers\browser\js-loader.js133141533519590879 0
+77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.419f3d1c.css.map133143994015715046 0
 120C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\runtime-js\src\helpers\browser\prefetch-loader.js133141533519625895 0
 116C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\runtime-js\src\helpers\browser\wasm-loader.js133141533519651711 0
 98C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\runtime-js\lib\JSRuntime.js133141533519610829 0
@@ -3966,6 +3968,7 @@
 128C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\package-manager\test\fixtures\packages\peers-2.0\index.js133141533525554170 0
 114C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\core\test\fixtures\main-global\package.json133141533529128921 0
 128C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\package-manager\test\fixtures\packages\peers\package.json133141533525929374 0
+77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.c8ade16a.css.map133144067686654934 0
 126C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\package-manager\test\fixtures\packages\foo-2.0\index.js133141533525554170 0
 124C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\package-manager\test\fixtures\packages\a\package.json133141533525929374 0
 121C:\Users\jacks\Code\FEM\skilled-landing-page-redo\node_modules\@parcel\package-manager\test\fixtures\has-foo\package.json133141533525903918 0
@@ -4403,9 +4406,12 @@
 87C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\image-hero-desktop.c584058b.webp133143986611454953 0
 86C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\image-hero-mobile.ef4a1490.webp133143986520369006 0
 86C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\image-hero-tablet.ea23d977.webp133143986520369006 0
+73C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.72ef963c.css133144047964578969 0
+77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.72ef963c.css.map133144047964608509 0
 73C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.9ea5342a.css133143986616145903 0
 77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.9ea5342a.css.map133143986616165913 0
-77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.b10d73a7.css.map133143986520569466 0
+77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.b10d73a7.css.map133144066588180460 0
+73C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\index.c8ade16a.css133144067686624985 0
 77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\logo-dark.905b8ba8.svg133143986520398942 0
 77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\logo-dark.a48abbf9.svg133143986615966379 0
 77C:\Users\jacks\Code\FEM\skilled-landing-page-redo\dist\logo-dark.c719f1f0.svg133141536625739813 0

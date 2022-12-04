@@ -1,0 +1,396 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*
+    1. Use a more-intuitive box-sizing model.
+  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+        2. Remove default margin
+      */
+* {
+  margin: 0;
+}
+
+/*
+        3. Allow percentage-based heights in the application
+      */
+html,
+body {
+  height: 100%;
+}
+
+/*
+        Typographic tweaks!
+        4. Add accessible line-height
+        5. Improve text rendering
+      */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+        6. Improve media defaults
+      */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+        7. Remove built-in form typography styles
+      */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+        8. Avoid text overflows
+      */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.footer-button {
+  position: relative;
+  background-image: var(--bluePinkGradient);
+  color: var(--white);
+  z-index: 1;
+}
+
+/* adding a transition to a gradient */
+.footer-button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  z-index: -1;
+  transition: opacity 0.2s ease-in;
+  opacity: 0;
+  border-radius: 1.75rem;
+}
+
+.footer-button:hover::before {
+  opacity: 1;
+}
+
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  /* neutrals */
+  --darkishBlue: hsl(233, 54%, 16%);
+  --gray: hsl(232, 10%, 56%);
+  --darkishGray: hsl(234, 25%, 52%);
+  /* primary */
+  --darkishPink: hsl(341, 92%, 62%);
+  --pink: hsl(341, 100%, 83%);
+  /* gradients */
+  --orangePinkGradient: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  --bluePinkGradient: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
+
+source {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+h1 {
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 38px;
+  margin-bottom: 26px;
+  max-width: 21.4375rem;
+  font-size: 2.5rem;
+}
+@media (min-width: 42.1875rem) {
+  h1 {
+    max-width: 20.375rem;
+  }
+}
+@media (min-width: 58rem) {
+  h1 {
+    font-size: 3.5rem;
+    max-width: 28.5625rem;
+  }
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+@media (min-width: 58rem) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+p {
+  color: var(--gray);
+  font-size: 1rem;
+  max-width: 21.4375rem;
+}
+@media (min-width: 42.1875rem) {
+  p {
+    max-width: 24.875rem;
+    max-width: 27.8125rem;
+  }
+}
+@media (min-width: 58rem) {
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 16px;
+  margin: auto;
+}
+@media (min-width: 42.1875rem) {
+  .intro {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-bottom: 93px;
+  }
+}
+
+@media (min-width: 42.1875rem) {
+  .intro-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+.intro-content {
+  margin: 0 auto;
+}
+@media (min-width: 42.1875rem) {
+  .intro-content {
+    width: 24.875rem;
+  }
+}
+@media (min-width: 58rem) {
+  .intro-content {
+    width: 28.5625rem;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 1.75rem;
+  border: none;
+  color: var(--white);
+  background: var(--darkishBlue);
+  transition: 200ms background ease-in;
+}
+@media (min-width: 58rem) {
+  button {
+    font-size: 1.125rem;
+  }
+}
+
+button:hover {
+  background: var(--darkishGray);
+}
+
+.primary-button {
+  background: var(--orangePinkGradient);
+  max-width: 10.4375rem;
+  border-radius: 1.96875rem;
+  padding: 15px 30px;
+  margin-top: 24px;
+  margin-bottom: 46px;
+  transition: 200ms opacity ease-in;
+}
+
+.primary-button:hover {
+  opacity: 0.5;
+  background: var(--orangePinkGradient);
+}
+
+.picture-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 42.1875rem) {
+  picture {
+    width: 37.5rem;
+    height: 37.5rem;
+    position: absolute;
+    top: -105px;
+    right: -275px;
+  }
+}
+@media (min-width: 58rem) {
+  picture {
+    width: 62.5rem;
+    top: -200px;
+  }
+}
+
+.cta-wrapper {
+  background: var(--orangePinkGradient);
+  padding: 24px 29px 32px 28px;
+  border-radius: 0.625rem;
+  max-width: 21.4375rem;
+  margin-bottom: 40px;
+}
+@media (min-width: 42.1875rem) {
+  .cta-wrapper {
+    height: 16.1875rem;
+  }
+  .cta-wrapper h2 {
+    margin-top: 32px;
+  }
+}
+@media (min-width: 58rem) {
+  .cta-wrapper {
+    height: 20.125rem;
+  }
+}
+
+.grid-wrapper {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+@media (min-width: 42.1875rem) {
+  .grid-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.grid {
+  margin: 0px 16px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 42.1875rem) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 46px;
+  }
+}
+@media (min-width: 58rem) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+.card {
+  margin: 0px;
+  background: var(--white);
+  max-width: 21.4375rem;
+  padding: 28px;
+  height: 16.1875rem;
+  margin-bottom: 40px;
+  border-radius: 0.625rem;
+  transition: scale 300ms ease-in;
+}
+.card a {
+  color: var(--darkishPink);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 200ms color ease-in;
+}
+.card a:hover {
+  color: pink;
+}
+.card .icon {
+  margin-top: -50px;
+}
+.card h3 {
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+.card p {
+  padding-bottom: 16px;
+}
+@media (min-width: 58rem) {
+  .card {
+    max-width: 21.875rem;
+    height: 20.125rem;
+    padding: 32px;
+  }
+  .card .icon {
+    margin-top: -54px;
+  }
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.card:last-child {
+  margin-bottom: 80px;
+}
+@media (min-width: 42.1875rem) {
+  .card:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 16px 16px 0px;
+}
+header button {
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 16px;
+  background: var(--darkishBlue);
+}
+
+/*# sourceMappingURL=css.map */

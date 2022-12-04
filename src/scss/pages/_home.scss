@@ -14,10 +14,16 @@ h1 {
   line-height: 1.2;
   margin-top: 38px;
   margin-bottom: 26px;
+  max-width: rem(343);
   font-size: rem(40);
+
+  @include breakpoint(tablet) {
+    max-width: rem(326);
+  }
 
   @include breakpoint(desktop) {
     font-size: rem(56);
+    max-width: rem(457);
   }
 }
 
@@ -25,6 +31,10 @@ h2 {
   font-weight: 800;
   font-size: rem(24);
   color: var(--white);
+
+  @include breakpoint(desktop) {
+    font-size: rem(32);
+  }
 }
 
 h3 {
@@ -35,12 +45,73 @@ h3 {
 p {
   color: var(--gray);
   font-size: 1rem;
+  max-width: rem(343);
+
+  @include breakpoint(tablet) {
+    max-width: rem(398);
+    max-width: rem(445);
+  }
+
+  @include breakpoint(desktop) {
+    font-size: rem(18);
+  }
 }
 
 .intro {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   padding: 0 16px;
+  margin: auto;
+
+  @include breakpoint(tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+    margin: 0;
+    max-width: rem(718);
+  }
+
+  @include breakpoint(desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: rem(1126);
+    margin-top: 168px;
+  }
+}
+
+@include breakpoint(tablet) {
+  // .intro-wrapper {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   place-items: center;
+  // }
+
+  .intro-wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@include breakpoint(desktop) {
+  .intro-wrapper {
+    margin-top: 0;
+    margin-bottom: 250px;
+  }
+}
+
+.intro-content {
+  margin: 0 auto;
+
+  @include breakpoint(tablet) {
+    margin: 0;
+    width: rem(398);
+  }
+
+  @include breakpoint(desktop) {
+    width: rem(457);
+  }
 }
 
 button {
@@ -53,6 +124,10 @@ button {
   color: var(--white);
   background: var(--darkishBlue);
   transition: 200ms background ease-in;
+
+  @include breakpoint(desktop) {
+    font-size: rem(18);
+  }
 }
 
 button:hover {
@@ -75,13 +150,24 @@ button:hover {
 }
 
 .picture-wrapper {
-  object-fit: contain;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
-.graphic {
-  object-fit: none;
+picture {
+  @include breakpoint(tablet) {
+    width: rem(600);
+    height: rem(600);
+    position: absolute;
+    top: 0px;
+    right: -275px;
+  }
+
+  @include breakpoint(desktop) {
+    width: rem(1000);
+    top: -175px;
+  }
 }
 
 .cta-wrapper {
@@ -98,21 +184,41 @@ button:hover {
       margin-top: 32px;
     }
   }
+
+  @include breakpoint(desktop) {
+    height: rem(322);
+  }
 }
 
 .grid-wrapper {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+
+  @include breakpoint(tablet) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include breakpoint(desktop) {
+    padding-bottom: 16px;
+  }
 }
 
 .grid {
   margin: 0px 16px;
   display: grid;
+  place-items: center;
   grid-template-columns: 1fr;
   gap: 16px;
 
   @include breakpoint(tablet) {
     grid-template-columns: 1fr 1fr;
-    place-items: center;
+    margin-bottom: 46px;
+  }
+
+  @include breakpoint(desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
   }
 }
 
@@ -125,16 +231,25 @@ button:hover {
   margin-bottom: 40px;
   border-radius: rem(10);
   transition: scale 300ms ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
   a {
     color: var(--darkishPink);
     font-size: rem(18);
     font-weight: 700;
     text-decoration: none;
+    transition: 200ms color ease-in;
+  }
+
+  a:hover {
+    color: pink;
   }
 
   .icon {
     margin-top: -50px;
+    max-width: 59px;
   }
 
   h3 {
@@ -145,26 +260,26 @@ button:hover {
   p {
     padding-bottom: 16px;
   }
+
+  @include breakpoint(desktop) {
+    max-width: rem(350);
+    height: rem(322);
+    padding: 32px;
+
+    .icon {
+      margin-top: -54px;
+    }
+  }
 }
 
 .card:hover {
   scale: 1.05;
 }
 
-@include breakpoint(tablet) {
-  .intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 0px;
-  }
+.card:last-child {
+  margin-bottom: 80px;
 
-  .intro-content {
-    max-width: rem(457);
-  }
-
-  .picture-wrapper {
-    object-fit: none;
-    position: relative;
+  @include breakpoint(tablet) {
+    margin-bottom: 40px;
   }
 }
