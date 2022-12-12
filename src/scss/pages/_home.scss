@@ -12,8 +12,8 @@ img {
 h1 {
   font-weight: 800;
   line-height: 1.2;
-  margin-top: 38px;
-  margin-bottom: 26px;
+  margin-top: rem(38);
+  margin-bottom: rem(26);
   max-width: rem(343);
   font-size: rem(40);
 
@@ -75,7 +75,7 @@ p {
   @include breakpoint(desktop) {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: rem(1126);
-    margin-top: 168px;
+    margin-top: rem(168);
   }
 }
 
@@ -87,8 +87,8 @@ p {
   // }
 
   .intro-wrapper {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: rem(100);
+    margin-bottom: rem(100);
     display: flex;
     justify-content: center;
   }
@@ -97,7 +97,7 @@ p {
 @include breakpoint(desktop) {
   .intro-wrapper {
     margin-top: 0;
-    margin-bottom: 250px;
+    margin-bottom: rem(250);
   }
 }
 
@@ -139,8 +139,8 @@ button:hover {
   max-width: rem(167);
   border-radius: rem(31.5);
   padding: 15px 30px;
-  margin-top: 24px;
-  margin-bottom: 46px;
+  margin-top: rem(24);
+  margin-bottom: rem(46);
   transition: 200ms opacity ease-in;
 }
 
@@ -172,7 +172,7 @@ picture {
 
 .cta-wrapper {
   background: var(--orangePinkGradient);
-  padding: 24px 29px 32px 28px;
+  padding: rem(24) 29px rem(32) 28px;
   border-radius: rem(10);
   max-width: rem(343);
   margin-bottom: 40px;
@@ -181,7 +181,7 @@ picture {
     height: rem(259);
 
     h2 {
-      margin-top: 32px;
+      margin-top: rem(32);
     }
   }
 
@@ -199,7 +199,7 @@ picture {
   }
 
   @include breakpoint(desktop) {
-    padding-bottom: 16px;
+    padding-bottom: rem(16);
   }
 }
 
@@ -212,7 +212,7 @@ picture {
 
   @include breakpoint(tablet) {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 46px;
+    margin-bottom: rem(46);
   }
 
   @include breakpoint(desktop) {
@@ -226,9 +226,9 @@ picture {
   margin: 0px;
   background: var(--white);
   max-width: rem(343);
-  padding: 28px;
+  padding: rem(28);
   height: rem(259);
-  margin-bottom: 40px;
+  margin-bottom: rem(40);
   border-radius: rem(10);
   transition: scale 300ms ease-in;
   display: flex;
@@ -248,17 +248,17 @@ picture {
   }
 
   .icon {
-    margin-top: -50px;
+    margin-top: rem(-50);
     max-width: 59px;
   }
 
   h3 {
-    padding-top: 24px;
-    padding-bottom: 16px;
+    padding-top: rem(24);
+    padding-bottom: rem(16);
   }
 
   p {
-    padding-bottom: 16px;
+    padding-bottom: rem(16);
   }
 
   @include breakpoint(desktop) {
@@ -267,7 +267,7 @@ picture {
     padding: 32px;
 
     .icon {
-      margin-top: -54px;
+      margin-top: rem(-54);
     }
   }
 }
@@ -277,9 +277,9 @@ picture {
 }
 
 .card:last-child {
-  margin-bottom: 80px;
+  margin-bottom: rem(80);
 
   @include breakpoint(tablet) {
-    margin-bottom: 40px;
+    margin-bottom: rem(40);
   }
 }

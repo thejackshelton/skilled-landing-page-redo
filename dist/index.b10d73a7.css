@@ -76,8 +76,8 @@ img {
 
 h1 {
   max-width: 21.4375rem;
-  margin-top: 38px;
-  margin-bottom: 26px;
+  margin-top: 2.375rem;
+  margin-bottom: 1.625rem;
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.2;
@@ -154,15 +154,15 @@ p {
   .intro {
     max-width: 70.375rem;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 168px;
+    margin-top: 10.5rem;
   }
 }
 
 @media (min-width: 42.1875rem) {
   .intro-wrapper {
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
     display: flex;
   }
 }
@@ -170,7 +170,7 @@ p {
 @media (min-width: 73rem) {
   .intro-wrapper {
     margin-top: 0;
-    margin-bottom: 250px;
+    margin-bottom: 15.625rem;
   }
 }
 
@@ -217,8 +217,8 @@ button:hover {
   background: var(--orangePinkGradient);
   max-width: 10.4375rem;
   border-radius: 1.96875rem;
-  margin-top: 24px;
-  margin-bottom: 46px;
+  margin-top: 1.5rem;
+  margin-bottom: 2.875rem;
   padding: 15px 30px;
   transition: opacity .2s ease-in;
 }
@@ -256,7 +256,7 @@ button:hover {
   max-width: 21.4375rem;
   border-radius: .625rem;
   margin-bottom: 40px;
-  padding: 24px 29px 32px 28px;
+  padding: 1.5rem 29px 2rem 28px;
 }
 
 @media (min-width: 42.1875rem) {
@@ -265,7 +265,7 @@ button:hover {
   }
 
   .cta-wrapper h2 {
-    margin-top: 32px;
+    margin-top: 2rem;
   }
 }
 
@@ -288,7 +288,7 @@ button:hover {
 
 @media (min-width: 73rem) {
   .grid-wrapper {
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
   }
 }
 
@@ -303,7 +303,7 @@ button:hover {
 @media (min-width: 42.1875rem) {
   .grid {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 46px;
+    margin-bottom: 2.875rem;
   }
 }
 
@@ -322,8 +322,8 @@ button:hover {
   border-radius: .625rem;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 0 0 40px;
-  padding: 28px;
+  margin: 0 0 2.5rem;
+  padding: 1.75rem;
   transition: scale .3s ease-in;
   display: flex;
 }
@@ -342,16 +342,16 @@ button:hover {
 
 .card .icon {
   max-width: 59px;
-  margin-top: -50px;
+  margin-top: -3.125rem;
 }
 
 .card h3 {
-  padding-top: 24px;
-  padding-bottom: 16px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .card p {
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 73rem) {
@@ -362,7 +362,7 @@ button:hover {
   }
 
   .card .icon {
-    margin-top: -54px;
+    margin-top: -3.375rem;
   }
 }
 
@@ -371,12 +371,12 @@ button:hover {
 }
 
 .card:last-child {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 42.1875rem) {
   .card:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 
